@@ -30,7 +30,8 @@
     </div>
 
     <div class="bottom">
-        <form>
+        <form method="POST" action="/broadcast">
+            @csrf
             <input type="text" id="message" name="message" placeholder="Enter message..." autocomplete="off">
             <button type="submit"></button>
         </form>
